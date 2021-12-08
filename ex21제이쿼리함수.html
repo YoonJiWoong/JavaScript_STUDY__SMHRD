@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <p id="txt">가나다</p>
+    <p>서대회</p>
+    <button id="btn">클릭!</button>
+
+    <script>
+        // 버튼을 클릭했을때! p태그의 글자색을 빨간색으로~
+
+        /*
+        document.getElementById("btn").addEventListener("click",function(
+        ){
+            document.getElementById("txt").style.color="red";
+        });
+        */
+
+        // 제이쿼리 이벤트 .on("실행할이벤트","실행될함수");
+
+        $("#btn").on("click",function(){
+            $("#txt").css("color","red");
+        })
+
+        
+    $("p").on("mouseover",function(){
+    //  $("p").css("color","blue"); // p태그는 전부 다!!    
+        $(this).css("color","blue"); //내가 선택한 주체에만!!!
+    });
+
+    $("p").on("mouseout",function(){
+        $(this).css("color","black");
+    })
+
+    $("p").on({
+        "mouseover": function(){
+            $(this).css("color","blue")
+        },
+        "mouseout": function(){
+            $(this).css("color","black")
+        }
+
+    })
+
+    // on 안쓰면 단일 이벤트!!(하나밖에 못써) // on 쓰면 : 다중 이벤트 처리!!
+
+
+
+    </script>
+</body>
+</html>

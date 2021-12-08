@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        
+let list = [1,2,3,4,5,6,7,8,9,10];
+        let oddList = [];
+        let cnt = 0; 
+
+        for(let i = 0 ; i <list.length ; i++){
+            if(list[i]%2 ==1){
+                //홀수일경우 홀수만 담아줄 배열에 넣어주기
+                oddList[cnt] = list[i];
+                //cnt 대신 i로 쓰면 이상하게 나온다. ,,이렇게 두개 찍힌다.
+                cnt++;
+            }
+        }
+
+        alert("list에 들어있는 홀수는"+oddList+"입니다" + oddList.length+"개");
+
+        console(oddList);
+
+    </script>
+
+
+</body>
+</html>

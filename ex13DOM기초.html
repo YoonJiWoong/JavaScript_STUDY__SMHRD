@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id="txt">DOM데이터</P>
+    <button onclick="innerDate()">클릭</button>
+    <script>
+
+        let num = 1;
+        num=5;
+        
+        function innerDate(){
+        // 버튼을 클릭했을때! P태그 안에 있는 내용을 들고와서 alert창에 출력!
+        //  alert(document.getElementById("txt").innerText); 
+        // 가지고와줘!! 요소를!! 그래서 출력이...그래서 .찍고 innerText를!!
+
+        // .innerText >> 내가 들고온 요소(태그+컨텐츠)에서 안에 있는 글자정보만 가지고 오는 기능 get
+        // .innerText - "대입" 내용을 수정할때 사용!
+
+        // innerHtml = 태그 정보를 지원O vs innerText = 태그 정보를 지원하지X
+        document.getElementById("txt").innerText = "<h1>변경된 값입니다.</h1>"; //글자라고 인식!
+        
+        // 태그를 인식하고 싶다면!!?
+        // document.getElementById("txt").innerHTML = "<h1>변경된 값입니다.</h1>"; //글자라고 인식!
+
+        
+        
+        // 글자 내용이 수정되버림!!
+
+
+        }
+        
+    </script>
+</body>
+</html>

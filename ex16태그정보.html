@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+    <script>
+        // 모든 li 태그의 컨텐츠(내용) 콘솔창에 출력
+        // ID >> 고유한 값이기 때문에 데이터가 1개만 넘어온다.
+        // class, name 등은 복수개의 데이터를 받기 떄문에 리턴타입
+        // HTMLCollection >> 유사배열 >> 배열형태로 넘어온다!
+        // 꺼낼때는 인덱스를 활용, for문을 활용, length
+       let li = document.getElementsByTagName("li");
+       for(let i =0; i<li.length; i++){
+        console.log(li[i].innerText);
+       }
+      
+    </script>
+
+</body>
+</html>

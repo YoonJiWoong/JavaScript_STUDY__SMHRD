@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+        /*
+        #txt{
+            color: red;
+            font-size: 100px;
+        }
+        */
+    </style>
+
+
+</head>
+<body>
+    <p id="txt">변경해주세요~</p>
+    <button onclick="data()">클릭!</button>
+
+    <script>
+
+        function data(){
+            // 1. p태그 안에 있는 내용을 출력
+            // document.getElementById("txt").innerHTML
+            // alert($("#txt").html());
+            
+            // 2. p태그 안에 있는 내용을 수정
+            // document.getElementById("txt").innerHTML = "대입";
+            $("#txt").html("수정!!"); // p태그 내용 수정
+
+            // * 제이쿼리를 활용해서
+
+        //    $("선택자").html() >> get 데이터를 가지고오기!
+        //    $("선택자").html("수정할데이터") >> set 데이터를 수정하기!
+
+            // 스타일 변경하는 방법
+            // document.getElementById("txt").style.color = "red";
+        //    $("#txt").css("color","red"); // 글자 색을 바꾸기
+        //    $("#txt").css("font-size","100px"); // 글자 크기 바꾸기
+
+            // 스타일의 다중 처리
+            $("#txt").css({
+                "color" : "red", 
+                "font-size" : "100px"
+            });
+
+
+        };
+
+
+    </script>
+
+
+</body>
+</html>

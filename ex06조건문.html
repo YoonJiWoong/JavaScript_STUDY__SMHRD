@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="design">
+    <script>
+            /*
+            let input = prompt("색을 입력해주세요(빨강,초록,파랑)");
+            if(input == "빨강"){
+                document.getElementById("design").style.backgroundColor="red";
+            }else if(input == "초록"){
+                document.getElementById("design").style.backgroundColor="green";
+            }else if(input == "파랑"){
+                document.getElementById("design").style.backgroundColor="blue";
+            }
+            */
+
+            let input = prompt("색을 입력해주세요(빨강,초록,파랑)");
+            if(input == "빨강"){
+                document.querySelector("body").style.background="red";
+            }else if(input == "초록"){
+                document.querySelector("body").style.background="green ";
+            }else if(input == "파랑"){
+                document.querySelector("body").style.background="blue";
+            }
+            /*querySelector 쓸때는 id없어서 #txt 이런식으로 써야...*/
+            
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1. 배열형태의 데이터 생성
+        let person = ["정형", 25, 170];
+        person[0];
+        person[1];
+        person[2];
+
+        // 2. 객체형의 데이터 생성
+        let person2 = {
+
+            "이름" : "정형",
+            "나이" : 25,
+            "키" : 170,
+            "기술" : function () {
+                // 기능 정의
+                alert("진월동행동주먹!!");
+            }
+
+        }
+
+       console.log(person2.나이); //()쓰면 안되!
+       console.log(person2.이름);
+       console.log(person2.키);
+       person2.기술(); //기능 불러오니 () 꼭 써야해!
+
+
+
+    </script>
+
+</body>
+</html>
